@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlitchSniper - Website Vulnerability Testing</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="matrix-bg" id="matrixBg"></div>
+    <div class="orb"></div>
+    <div class="orb"></div>
+    <div class="orb"></div>
+
+    <div class="container">
+        <header class="game-header">
+            <h1 class="glitch-text" data-text="GlitchSniper">GlitchSniper</h1>
+            <p class="tagline" data-text="Professional Website Vulnerability Testing">Website Vulnerability Testing</p>
+        </header>
+
+        <main class="scanner-interface">
+            <div class="scan-mode-selector">
+                <button class="mode-button active" data-mode="website">
+                    <span class="mode-icon">🌐</span>
+                    Website Scan
+                </button>
+                <button class="mode-button" data-mode="github">
+                    <span class="mode-icon">📦</span>
+                    GitHub Repository Scan
+                </button>
+            </div>
+
+            <div class="url-input-container">
+                <div class="input-wrapper website-input">
+                    <input type="url" id="targetUrl" placeholder="Enter website URL (e.g., https://example.com)" class="cyber-input">
+                </div>
+                <div class="input-wrapper github-input" style="display: none;">
+                    <input type="text" id="githubRepo" placeholder="Enter GitHub repository (e.g., username/repo)" class="cyber-input">
+                </div>
+                <button id="startScan" class="cyber-button">Start Scan</button>
+            </div>
+
+            <div class="scan-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <div class="scan-status">Ready to scan...</div>
+            </div>
+
+            <div class="terminal-container">
+                <div class="terminal-header">
+                    <span class="terminal-title">Scan Log</span>
+                </div>
+                <div id="terminal" class="terminal"></div>
+            </div>
+
+            <div class="vulnerability-report">
+                <div class="report-header">
+                    <h2>Vulnerability Report</h2>
+                    <button id="downloadReport" class="download-button" disabled>
+                        <span class="download-icon">↓</span>
+                        Download Report
+                    </button>
+                </div>
+                <div id="vulnerabilityCards" class="vulnerability-cards"></div>
+            </div>
+        </main>
+
+        <footer class="game-footer">
+            <p>© 2025 GlitchSniper - Professional Security Testing</p>
+            <div class="social-links">
+                <a href="#" class="cyber-link">Documentation</a>
+                <a href="#" class="cyber-link">Support</a>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
