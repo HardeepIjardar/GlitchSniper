@@ -12,7 +12,11 @@
 
 ## Demo
 
-![GlitchSniper UI Screenshot](screenshot.png)
+### Main Interface
+![GlitchSniper Main UI](media/readme_1.png)
+
+### Vulnerability Report Example
+![GlitchSniper Vulnerability Report](media/readme_2.png)
 
 ## Getting Started
 
@@ -39,6 +43,7 @@
 ├── index.html        # Main web interface
 ├── style.css         # Cyber-themed styles
 ├── script.js         # UI logic and scan simulation
+├── media/            # Screenshots and media assets
 └── README.md         # Project documentation
 ```
 
